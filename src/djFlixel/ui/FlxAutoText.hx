@@ -213,7 +213,7 @@ class FlxAutoText extends FlxSpriteGroup
 			// :: WordMode is enabled
 			if (wordWait > 0) // dev: Assumes that nextSpace is checked
 			{
-				if (wordNextSpace > -1 && textIndex >= wordNextSpace) // Reached or just passed a space.
+				if (wordNextSpace > -1 /*&& textIndex >= wordNextSpace*/) // Reached or just passed a space.
 				{
 					textIndex = wordNextSpace + 1;
 					calcNextWordSpace();
